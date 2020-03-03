@@ -1,12 +1,13 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
-
+import { Nextpage } from "./views/nextpage";
 import { Home } from "./views/home";
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
-import injectContext from "./store/appContext";
 
+import { Starwars } from "./views/starwars";
+import injectContext from "./store/appContext";
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 
@@ -25,6 +26,9 @@ export const Layout = () => {
 						<Route exact path="/" component={Home} />
 						<Route path="/demo" component={Demo} />
 						<Route path="/single/:theid" component={Single} />
+						<Route path="/nextpage" component={Nextpage} />
+						<Route path="/starwars" component={Starwars} />
+
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
 					<Footer />

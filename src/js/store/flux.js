@@ -3,14 +3,14 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			demo: [
 				{
-					title: "FIRST",
-					background: "white",
-					initial: "white"
+					films: "https://swapi.co/api/films/",
+					people: "https://swapi.co/api/people/",
+					planets: "https://swapi.co/api/planets/"
 				},
 				{
-					title: "SECOND",
-					background: "white",
-					initial: "white"
+					species: "https://swapi.co/api/species/",
+					starships: "https://swapi.co/api/starships/",
+					vehicles: "https://swapi.co/api/vehicles/"
 				}
 			]
 		},
