@@ -38,7 +38,7 @@ export function Nextpage() {
 			</div>
 			<div>
 				<Link to="/starwars">
-					<button className="success">Starwars</button>
+					<button className="successbtn btn-dark">Starwars</button>
 				</Link>
 			</div>
 		</div>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Card } from "./card";
+
 //create your first component
 export function Starwars() {
 	const [people, setPeople] = useState([]);
@@ -11,12 +12,12 @@ export function Starwars() {
 
 				console.log(data);
 			});
-	});
+	}, []);
 	return (
 		<>
-			<div className="d-flex justify-content-center">
+			<div className="card-group d-flex justify-content-center">
 				{people.map((item, index) => {
-					return <Card key={index.name} />;
+					return <Card key={index} name={item.name} birth_year={item.birth_year} gender={item.gender} />;
 				})}
 			</div>
 		</>
