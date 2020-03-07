@@ -4,11 +4,9 @@ import "../../styles/home.scss";
 
 export const Home = () => (
 	<div className="text-center mt-5" style={{ color: "white" }}>
-		<h1>Pass on what you have learned.</h1>
-		<p>
-			<img src="https://pngimg.com/uploads/starwars/starwars_PNG27.png " />
-		</p>{" "}
-		<a href="#" className="btn btn-success">
+		<h3>Pass on what you have learned.</h3>
+
+		<a href="https://getbootstrap.com" className="btn btn-success">
 			If you see this green button, bootstrap is working
 		</a>
 	</div>

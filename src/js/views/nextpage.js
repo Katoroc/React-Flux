@@ -35,11 +35,11 @@ export function Nextpage() {
 				<Link to="/">
 					<button className="btn btn-primary">Back home</button>
 				</Link>
-			</div>
-			<div>
-				<Link to="/starwars">
-					<button className="successbtn btn-dark">Starwars</button>
-				</Link>
+				<div>
+					<Link to="/starwars">
+						<button className="successbtn btn-dark">Starwars</button>
+					</Link>
+				</div>
 			</div>
 		</div>
 	);
